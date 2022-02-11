@@ -32,7 +32,7 @@ app.post("/forgot-password", (req, res, next) => {
         return;
     }
 
-    //user exists and now create one time password link valid for 15 minutes
+    //user exists and now create one time password link valid for 5 hours
     const secret = JWT_SECRET + user.password;
     const payload = {
         email: user.email,
