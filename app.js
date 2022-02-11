@@ -96,7 +96,7 @@ app.post("/reset-password/:id/:token", (req, res, next) => {
         console.log(error.message)
         res.send(error.message)
     }
-    res.send(user);
+    //res.send(user);
 })
 
 
